@@ -1,13 +1,4 @@
-This code runs the robot. Standard funcitonality allows the robot to pick up an item, then follow
-a person or moving object. After stopping for 10 seconds, it drops the object.
-The code has been made readable enough to be able to be adjusted and modified.
-The functions included and their functionality are as follows.
-TurnRight(): Turns the robot right for an amount of milliseconds equal to the variable turnDelay.
-TurnLeft(): Turns the robot left for an amount of milliseconds equal to the variable turnDelay.
-Lower(): Lowers the servo arm.
-Lift(): Raises the servo arm.
-Forward(): Moves the robot directly forward.
-Reverse(): Moves the robot directly backwards.
-Stop(): Stops the robot.
-ReadDistance(): Lets the robot read how far it is from the object ahead of it.
-New functionality can be added by putting those functions together as building blocks.
+This robot was built for a class I had called Foundations of Engineering Lab.
+The project was to build a robot that could act as educational material for elementary to middle school aged students. I was responsible for the software engineering portion of the robot, as well as building the circuitry. We as a group wrote a technical report that summed up our findings and development process. 
+The functionality of the robot is as follows: Upon initializing, the robot lowers a crane arm, moves forward, and then lifts up the arm, attempting to pick up a small object such as a cardboard box. Then, it keeps an appropriate distance from a nearby object that it will follow, such as a hand. If the hand is too far, it moves forward. If the hand is too close, it will move backwards. If the distance is just right, it does not move. However, if there is no object for the robot to find, it will rotate, looking for the object in case it has moved to the side. If the robot stayed in the same position and orientation for 10 seconds, it will drop the object by lowering the crane arm and enter an idle state until initialized again.
+Code has been made into functional blocks purposefully to ensure easy reprogramming as an educational tool. 
